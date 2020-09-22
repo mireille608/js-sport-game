@@ -27,7 +27,7 @@ let maths1 = Math.random();
   if (maths1 > 0.8){
     console.log("Bye")
     //team2shots.failed
-    let newgoals2 = Number(team2goals.innerHTML)+1;
+    let newgoals2 = Number(team2goals.innerHTML)-1;
     team2goals.innerHTML = newgoals2
 
 }
@@ -35,7 +35,9 @@ let maths1 = Math.random();
 let resets = document.querySelector("#num-resets")
 let resetButton = document.querySelector("#reset-button")
 resetButton.addEventListener("click", function(){
-    console.log("great")
+  console.log("great")
+    let newresets = Number(resets.innerHTML)+1
+    resets.innerHTML = newresets
 })
 
  
