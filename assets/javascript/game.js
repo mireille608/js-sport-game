@@ -32,13 +32,19 @@ let maths1 = Math.random();
 
 }
 })
-let resets = document.querySelector("#num-resets")
+let NUMBEROFRESETS = document.querySelector("#num-resets")
 let resetButton = document.querySelector("#reset-button")
-resetButton.addEventListener("click", function(){
-  console.log("great")
-    let newresets = Number(resets.innerHTML)+1
-    resets.innerHTML = newresets
+ resetButton.addEventListener("click", function(){
+ // console.log("great")
+
+    let newresets =  Number( NUMBEROFRESETS.innerHTML)+1
+    NUMBEROFRESETS.innerHTML = newresets;team1shots.innerHTML=0
+    team2shots.innerHTML =0
+    team1goals.innerHTML=0; team2goals.innerHTML =0
+    
 })
+console.log("resetButton")
+console.log(reset-button)
 
  
     
